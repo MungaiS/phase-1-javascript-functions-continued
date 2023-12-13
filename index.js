@@ -8,8 +8,8 @@ function mondayWork(activity="go to the office") {
 }
 
 
-function wrapAdjective(star="*") {
-  return function(string="special") {
-      return `You are ${star}${string}${star}!`
+function wrapAdjective(operator) {
+  return function(string) {
+      return `You are ${operator}${string}${operator}!`
   }
 }
